@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital@0;1&family=Cinzel:wght@600&family=Exo+2:wght@300&family=Finlandica:ital@1&family=Gentium+Book+Plus:ital@1&family=Josefin+Sans:wght@300&family=Open+Sans:wght@300;400&family=Roboto+Slab&family=Roboto:wght@100&family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="signature logo.png">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Home Section -->
+    <section id="home-container" class="section1">
+      <div class="container">
+        <div class="home" class="content-section diagonal-section">
+          <div class="home-content">
+            <div class="text-content">
+              <h1>Hi, my name is <span class="gray">Pratik</span></h1>
+              <div><p>and I am a passionate</p></div>
+              <span id="element"></span>
+            </div>
+            <div class="image-content">
+              <img src="pngwing.com.png" alt="Your Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects-container" class="section">
+      <div class="container">
+        <div id="projects" class="content-section diagonal-section">
+          <div class="project-content">
+            <!-- Project Card 1 -->
+            <div
+              class="project-card"
+              onclick="openImage('website-template-design-projects.jpg')"
+            >
+              <img
+                src="FLIPKART CLONE.png"
+                alt="Project 1 Image"
+              />
+              <h3>Flipkart Clone</h3>
+              <p>
+                Implemented a flipkart Clone website using HTML and CSS, turned it into a responsive website which is user friendly on all media devices.
+                The aesthetic look of this website was challenge to implement and learnt important CSS properties which were essential for the greater understanding
+                of the codes and how the website works.
+              </p>
+              <div class="project-buttons">
+                <a href="https://flipkart-clone-com.preview-domain.com/" target="_blank" class="demo-button">Live Demo</a>
+            </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div
+              class="project-card"
+              onclick="openImage('101192-101192-original-1200.jpg')"
+            >
+              <img src="WEATHER APP.png" alt="Project 2 Image" />
+              <h3>Weather App</h3>
+              <p>
+                This weather app was created using frontend technolgy whic include the usual HTML, CSS and Javascript and in addition to that Bootstrap
+                was also used to understand this framework apart from that API handling has been done using Rapid api to update the waether forecast
+                depending upon the city as the user will mention in the website.
+              </p>
+              <div class="project-buttons">
+                <a href="https://myweatherapp-com.preview-domain.com/" target="_blank" class="demo-button">Live Demo</a>
+            </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section3">
+      <div class="container3">
+        <h2>Resume</h2>
+        <div class="buttons">
+          <a href="pratik_developer_resume.pdf" download class="download-btn">
+            <i class="fa-fa-download"></i>
+            <button class="btn">Download Resume</button></a
+          >
+        </div>
+        <!-- resume details  -->
+        <div class="resume-item">
+          <div class="certification">
+            <h3>Certification</h3>
+            <p>
+              Front end developement course from internshala.
+              <a href="https://trainings.internshala.com/s/v/3029228/54cde2c2"
+                >Link</a
+              >
+            </p>
+        </div>
+
+        <div class="Git_hub">
+          <h4>Git Hub Repository</h4>
+          <a href="https://github.com/patt2303/projects.git" target="_blank" class="github-button">GitHub</a>
+        </div>
+
+
+          <div class="resume-item">
+            <h3>Tech Stacks</h3>
+            <p>Here are some of the technologies I am familiar with:</p>
+            <!-- Adding the Tech Stack Container -->
+            <div class="tech-stack-container">
+                <div class="tech-stack-item">
+                    <img src="png-transparent-html5-icon-•-html-social-network-icon.png" alt="HTML Logo" />
+                    <p>HTML5</p>
+                </div>
+                <div class="tech-stack-item">
+                    <img src="png-transparent-website-web-internet-css-style-css3-technology-social-media-logos-i-flat-colorful-icon.png" alt="CSS Logo" />
+                    <p>CSS3</p>
+                </div>
+                <div class="tech-stack-item">
+                    <img src="javascript-3.png" alt="JavaScript Logo" />
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-stack-item">
+                    <img src="react-icon-2048x2048-o8k3ymqa.png" alt="React Logo" />
+                    <p>React JS</p>
+                </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>Contact me: pratik23031995@gmail.com</p>
+        <p>
+          Connect with me on
+          <a
+            href="https://www.linkedin.com/in/pratik-kumar-583866194/"
+            target="_blank"
+            >Linkedin</a
+          >
+        </p>
+        <p>&copy; 2023 mydevportfolio. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Frontend Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
